@@ -11,4 +11,4 @@ def prd(k,m,n):
     nk = (n/tot)*(k/(tot-1))*1
     nm = (n/tot)*(m/(tot-1))*0.5
     return kk+km+kn+mk+mm+mn+nk+nm
-prd(24, 18, 19)
+prd(21, 24, 19)
