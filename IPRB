@@ -1,0 +1,14 @@
+Iprb/Mendel's First Law
+
+def prd(k,m,n):
+    tot = k+m+n
+    kk = (k/tot)*((k-1)/(tot-1))*1
+    km = (k/tot)*(m/(tot-1))*1
+    kn = (k/tot)*(n/(tot-1))*1
+    mk = (m/tot)*(k/(tot-1))*1
+    mm = (m/tot)*((m-1)/(tot-1))*0.75
+    mn = (m/tot)*(n/(tot-1))*0.5
+    nk = (n/tot)*(k/(tot-1))*1
+    nm = (n/tot)*(m/(tot-1))*0.5
+    return kk+km+kn+mk+mm+mn+nk+nm
+prd(24, 18, 19)
