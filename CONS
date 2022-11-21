@@ -30,7 +30,6 @@ def Consensus(DNAs):
 
 
 
-
 with open("C:/Users/Cheetous/Desktop/Nesa/rosalind_cons.txt",'r') as file:
     content = file.read()
 DNAs_number, lines, line_number, DNAs = content.count('>'), content.splitlines(), 0, []
