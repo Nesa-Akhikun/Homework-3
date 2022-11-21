@@ -1,4 +1,4 @@
-Iprb/Mendel's First Law
+Iprb/Mendel's First Law:
 
 def prd(k,m,n):
     tot = k+m+n
