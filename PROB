@@ -1,0 +1,14 @@
+Prob/Introduction to Random Strings:
+
+
+import math
+s = "ATTATCCGAATTAAGTAAAAAATCAATTAGGTATTAGGTGCGTGCGCTCTATATCATGTCGTCCACGGTTAATCAGCTCTTGTAAGGCCTCA"
+A = "0.122 0.166 0.217 0.271 0.361 0.399 0.450 0.552 0.597 0.648 0.689 0.796 0.840 0.933"
+B,prob,gc = [],0,[float(i) for i in A.split()]
+for x in gc:
+    p = 0
+    l = {'A':(1-x)/2,'T':(1-x)/2,'C':x/2,'G':x/2}
+    for y in s:
+        p = p+math.log10(l[y])
+    B.append(p)
+print(" ".join([str(e) for e in B]))
